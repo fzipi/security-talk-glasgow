@@ -124,17 +124,37 @@ SELECT sql_query, disp_query
 ## OWASP Top Ten
 
 1. Injection
-
 2. Broken Authentication and Session Management
 
-...
+7. XSS (CSP)
 
 9. Using Components With Known Vulnerabilities
-
 10. Insufficient Logging and Monitoring
 
 ---
+## CSP: Content Security Policy
+
+`Content-Security-Policy: default-src 'self'`
+
+To tighten further, one can do the following:
+
+`Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';`
+
+### You can't mix HTML & JS or CSS
+
+---
 ## OWASP Top Ten Defensive Controls
+
+C1: Define Security Requirements
+C2: Leverage Security Frameworks and Libraries
+C3: Secure Database Access
+C4: Encode and Escape Data
+C5: Validate All Inputs
+C6: Implement Digital Identity
+C7: Enforce Access Controls
+C8: Protect Data Everywhere
+C9: Implement Security Logging and Monitoring
+C10: Handle All Errors and Exceptions
 
 ---
 ## OWASP ASVS
@@ -147,10 +167,7 @@ SELECT sql_query, disp_query
 - V7. Cryptography at rest
 - V8. Error handling and logging
 - V9. Data protection
-- V10. Communications
-- V11. HTTP security configuration
-- V13. Malicious controls
-- V15. Business logic
-- V16. File and resources
-- V17. Mobile
-- V18. Web services (NEW for 3.0)
+...
+...
+
+
