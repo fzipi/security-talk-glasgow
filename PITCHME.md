@@ -139,13 +139,13 @@ SELECT sql_query, disp_query
 ---
 ## OWASP Top Ten
 
-- 1. Injection
-- 2. Broken Authentication and Session Management
+- A1. Injection
+- A2. Broken Authentication and Session Management
 ...
-- 7. XSS (CSP)
+- A7. XSS (CSP)
 ...
-- 9. Using Components With Known Vulnerabilities
-- 10. Insufficient Logging and Monitoring
+- A9. Using Components With Known Vulnerabilities
+- A10. Insufficient Logging and Monitoring
 
 ---
 ## CSP: Content Security Policy
