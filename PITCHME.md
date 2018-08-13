@@ -134,6 +134,8 @@ SELECT sql_query, disp_query
 ---
 ## CSP: Content Security Policy
 
+@fa[fa-arrow-circle-right] It is a declarative policy that informs the user agent what are valid sources to load from. 
+
 `Content-Security-Policy: default-src 'self'`
 
 To tighten further, one can do the following:
