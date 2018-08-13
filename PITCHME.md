@@ -97,43 +97,55 @@ SELECT sql_query, disp_query
 
 +++
 ### Typing
+
+@ul
+
 - In the end there is a typing problem
 - All the web is a `string`
 - But we have different types in our code, and in our DB
 - And what about codifications?
 
+@ulend
+
 +++
 ### Sanitize all inputs
 
+@ul
+
 - All inputs must be sanitized
 - The resposibility relies on the `sub` that receives the data (this is easier when using MVC)
+
+@ulend
 
 ---
 ### Validation
 
 - Is the act of dinamically execute and test a program, so it conforms with the actual requirements.
 - Do you remember, we already did verification!
-
 - Once we have valid type for our data, is it valid in our context?
 - If it is some ID, it is valid and the user can access it?
 
 ---
 ## Context and Codification
 
+@ul
+
 - Codification depends on context.
 - You cannot codify output as HTML, if you are outputting JS
 - Sanitization will depend on context also (see for example Taint mode)
 
+@ulend
+
 ---
 ## OWASP Top Ten
 
-1. Injection
-2. Broken Authentication and Session Management
-
-7. XSS (CSP)
-
-9. Using Components With Known Vulnerabilities
-10. Insufficient Logging and Monitoring
+- 1. Injection
+- 2. Broken Authentication and Session Management
+...
+- 7. XSS (CSP)
+...
+- 9. Using Components With Known Vulnerabilities
+- 10. Insufficient Logging and Monitoring
 
 ---
 ## CSP: Content Security Policy
@@ -151,20 +163,25 @@ To tighten further, one can do the following:
 ---
 ## OWASP Top Ten Defensive Controls
 
-C1: Define Security Requirements
-C2: Leverage Security Frameworks and Libraries
-C3: Secure Database Access
-C4: Encode and Escape Data
-C5: Validate All Inputs
-C6: Implement Digital Identity
-C7: Enforce Access Controls
-C8: Protect Data Everywhere
-C9: Implement Security Logging and Monitoring
-C10: Handle All Errors and Exceptions
+@ul
+
+- C1: Define Security Requirements
+- C2: Leverage Security Frameworks and Libraries
+- C3: Secure Database Access
+- C4: Encode and Escape Data
+- C5: Validate All Inputs
+- C6: Implement Digital Identity
+- C7: Enforce Access Controls
+- C8: Protect Data Everywhere
+- C9: Implement Security Logging and Monitoring
+- C10: Handle All Errors and Exceptions
+
+@ulend
 
 ---
 ## OWASP ASVS
 ### Application Security Verification Standard
+
 - V1. Architecture, design and threat modelling
 - V2. Authentication
 - V3. Session management
@@ -173,7 +190,6 @@ C10: Handle All Errors and Exceptions
 - V7. Cryptography at rest
 - V8. Error handling and logging
 - V9. Data protection
-...
 ...
 
 
