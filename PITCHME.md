@@ -107,7 +107,7 @@ SELECT sql_query, disp_query
 ---
 ### Validation
 
-- Is the act of dinamycally execute and test a program, so it conforms with the actual requirements.
+- Is the act of dinamically execute and test a program, so it conforms with the actual requirements.
 - Do you remember, we already did verification!
 
 - Once we have valid type for our data, is it valid in our context?
@@ -119,3 +119,38 @@ SELECT sql_query, disp_query
 - Codification depends on context.
 - You cannot codify output as HTML, if you are outputting JS
 - Sanitization will depend on context also (see for example Taint mode)
+
+---
+## OWASP Top Ten
+
+1. Injection
+
+2. Broken Authentication and Session Management
+
+...
+
+9. Using Components With Known Vulnerabilities
+
+10. Insufficient Logging and Monitoring
+
+---
+## OWASP Top Ten Defensive Controls
+
+---
+## OWASP ASVS
+### Application Security Verification Standard
+- V1. Architecture, design and threat modelling
+- V2. Authentication
+- V3. Session management
+- V4. Access control
+- V5. Malicious input handling
+- V7. Cryptography at rest
+- V8. Error handling and logging
+- V9. Data protection
+- V10. Communications
+- V11. HTTP security configuration
+- V13. Malicious controls
+- V15. Business logic
+- V16. File and resources
+- V17. Mobile
+- V18. Web services (NEW for 3.0)
