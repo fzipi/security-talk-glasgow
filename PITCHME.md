@@ -16,6 +16,10 @@ Note:
 - Verification & Validaton
 - Context & Codification
 - Web problems
+- Top Ten
+- CSP 
+- Defensive Controls
+- ASVS
 
 ---
 ## Verification
